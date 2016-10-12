@@ -1,103 +1,205 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>webBudget</title>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="A layout example that shows off a blog page with a list of posts.">
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/github-light.css">
-    <meta name="viewport" content="width=device-width">
-    <link rel="shortcut icon" type="image/png" href="favicon.png">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
+        <title>webBudget</title>
 
-    <meta property="og:url" content="http://arthurgregorio.github.io/web-budget/">
-    <meta property="og:type" content="website">
-    <meta property="og:locale" content="pt_BR">
-    <meta property="og:site_name" content="Conheça o webBudget">
-    <meta property="og:title" content="webBudget Project">
-    <meta property="og:description" content="Conheça o webBudget, um sistema de controle financeiro open-source!">
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <img src="images/ui-wb-logo.png" alt="webBudget" style="width:230px;height:90px;">
-        <p>Sistema web para controle financeiro pessoal ou de pequenas empresas</p>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+        
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css">
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-old-ie-min.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/grids-responsive-min.css">
+        <!--<![endif]-->
+        <!--[if lte IE 8]>
+            <link rel="stylesheet" href="css/layouts/blog-old-ie.css">
+        <![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link rel="stylesheet" href="css/layouts/blog.css">
+        <!--<![endif]-->
+        <link rel="stylesheet" href="css/photoswipe/photoswipe.css"> 
+        <link rel="stylesheet" href="css/photoswipe/default-skin/default-skin.css"> 
+    </head>
+    <body>
+        <div id="layout" class="pure-g">
+            <div class="sidebar pure-u-1 pure-u-md-1-4">
+                <div class="header">
+                    <span class="wb-font wb-logo-prefix">web</span><span class="wb-font wb-logo-sufix">Budget</span>
+                    <h3 class="brand-tagline">Free financial control for you or your company</h3>
+                    <nav class="nav">
+                        <ul class="nav-list">
+                            <li class="nav-item">
+                                <a class="pure-button" href="https://teste-webbudget.rhcloud.com" target="_blank">Live Preview</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="pure-button" href="https://github.com/arthurgregorio/web-budget" target="_blank">Contribute</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
 
-        <div style="padding-top:40px;text-align:center">
-          <p>
-            <a href="https://drive.google.com/open?id=0B9NoveN3n3oKaUR6bUdCUWVKY2s" target="_blank">
-              <img src="images/ui-download.svg" title="Download" style="width:64px;height:64px;">
-              <br/>Download
-            </a>
-          </p>
+            <div class="content pure-u-1 pure-u-md-3-4">
+                <div>
+                    <!-- A wrapper for all the blog posts -->
+                    <div class="posts">
+                        <h1 class="content-subhead">About</h1>
 
-          <p style="padding-top:20px;">
-            <a href="https://github.com/arthurgregorio/web-budget" target="_blank">
-              <img src="images/ui-github.svg" title="Ver no Github" style="width:64px;height:64px;">
-              <br/>Ver no Github
-            </a>
-          </p>
+                        <!-- A single blog post -->
+                        <section class="post">
+                            <header class="post-header">
+                                <h2 class="post-title">What is this?</h2>
+                            </header>
+                            <div class="post-description">
+                                <p>
+                                    The webBudget is a free and open-source project for managing the your finances or of your small business. With no cost or fee you can simply control all the revenues and expenses within a defined period, with graphs and controls that show how you financial health is going.
+                                </p>
+                                <p>
+                                    Below you can see the main features of the project or you can try him live by clicking in <a href="https://teste-webbudget.rhcloud.com" target="_blank">this link</a>.
+                                </p>
+                            </div>
+                        </section>
+                    </div>
 
-          <p style="padding-top:20px;">
-            <a href="https://teste-webbudget.rhcloud.com/" target="_blank">
-              <img src="images/ui-test.svg" title="Teste agora!" style="width:64px;height:64px;">
-              <br/>Teste agora!
-            </a>
-          </p>
+                    <div class="posts">
+                        <h1 class="content-subhead">The project</h1>
+                        <section class="post">
+                            <header class="post-header">
+                                <h2 class="post-title">Main features</h2>
+                            </header>
+                            <div class="post-description">
+                                <p>
+                                    The system consists of a simple financial classification of movements with classes inside a cost center, this classification makes the movement as revenue or expense.
+                                </p>
+                                <p>
+                                    With the classified movements, you can pay him with your wallet. For that you can use a personal wallet or bank account, or yet, you can add credit or debit cards to place the payments of your movements.
+                                </p>
+                                <p>
+                                    For credit card payments, the system can track your movimentation and when you want to pay his invoice, the system groups all the expenses on the card and turns him on a single movement to pay with one of your wallets.
+                                </p>
+                                <p>
+                                    The system can provide more specific functionalities, like a logbook of your expenses with your vehicles and more...
+                                </p>
+                                <p>
+                                    See below a list of all the functionalities of the system:
+                                </p>
+                                <ul>
+                                    <li>Credit card control with detailed invoice</li>
+                                    <li>Movimentation classified by classes and cost centers</li>
+                                    <li>Wallet control, for personal wallets or bank accounts</li>
+                                    <li>a simple system to send or receive messages with other users</li>
+                                    <li>All the movimentation can be done with controlled periods with graphics to track the results</li>
+                                    <li>vehicle logbook to maintain a simple history of your expenses, maintenances or refuelings</li>
+                                </ul>
+                                <p>
+                                    And much more! See the <a href="https://teste-webbudget.rhcloud.com">live preview</a> for a full experience of the system running.
+                                </p>
+                            </div>
+                        </section>
+                        <section class="post">
+                            <header class="post-header">
+                                <h2 class="post-title">Technology</h2>
+                            </header>
+                            <div class="post-description">
+                                <p>
+                                    Built using the Java platform, the project is designed to work everywhere through the web. So, you can deploy the project on a webserver of your choice and acess it from anywhere. No local server is needed. For example, the demonstration environment is provided by using a free <a href="https://www.openshift.com/" target="_blank">OpenShift</a> account.
+                                </p>
+                                <p>
+                                    Some of the technologies used on the project:
+                                </p>
+                                <p style="text-align: center;">
+                                    <img src="img/techs.png">
+                                </p>
+                            </div>
+                        </section>
+                    </div>
+
+                    <div class="footer">
+                        <div class="pure-menu pure-menu-horizontal">
+                            <ul>
+                                <li class="pure-menu-item"><a href="https://br.linkedin.com/in/gregorioarthur" class="pure-menu-link">The Author</a></li>
+                                <li class="pure-menu-item"><a href="https://github.com/arthurgregorio/" class="pure-menu-link">My GitHub</a></li>                        
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </header>
-      <section>
-        <h4>
-<a id="apresentação" class="anchor" href="#apresenta%C3%A7%C3%A3o" aria-hidden="true"><span class="octicon octicon-link"></span></a>Apresentação:</h4>
+        
+        <!-- Root element of PhotoSwipe. Must have class pswp. -->
+        <div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
 
-<p>O webBudget é um sistema simples de controle financeiro para pequenas empresas ou uso pessoal. </p>
+            <!-- Background of PhotoSwipe. 
+                 It's a separate element as animating opacity is faster than rgba(). -->
+            <div class="pswp__bg"></div>
 
-<p>Através dele é possível realizar o controle de receitas e despesas por centro de custo e classes de movimentação, acompanhar por períodos as suas movimentações e visualizar através de gráficos como andam as finanças.</p>
+            <!-- Slides wrapper with overflow:hidden. -->
+            <div class="pswp__scroll-wrap">
 
-<h4>
-<a id="principais-funcionalidades" class="anchor" href="#principais-funcionalidades" aria-hidden="true"><span class="octicon octicon-link"></span></a>Principais Funcionalidades:</h4>
+                <!-- Container that holds slides. 
+                    PhotoSwipe keeps only 3 of them in the DOM to save memory.
+                    Don't modify these 3 pswp__item elements, data is added later on. -->
+                <div class="pswp__container">
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                    <div class="pswp__item"></div>
+                </div>
 
-<p>O sistema em sua versão atual possui várias funcionalidades baseadas na necessidade de um controle financeiro simples e eficaz. Sendo elas:</p>
+                <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+                <div class="pswp__ui pswp__ui--hidden">
 
-<ul>
-<li>Controle de entradas e saídas atavés de movimentos classificados por centro de custo e classe</li>
-<li>Controle de carteiras, contas bancárias ou carteira física</li>
-<li>Controle de cartões de crédito, com geração de faturas e acompanhamento de gastos</li>
-<li>Centros de custo e classes de despesas/receitas, com definição de margem de limite (orçamento previsto)</li>
-<li>Rateio de movimentos por centro de custo e classe de movimentação, ou seja, um movimento pode ser dividido em vários CC para melhorar divisão das contas</li>
-<li>Mecanismo interno de mensageria entre os usuários</li>
-<li>Períodos de lançamentos no estilo competência, com data de início e fim e acompanhamento gráfico dos movimentos </li>
-<li>Controle de usuários através de permissões de acesso por grupos (visualização, inclusão, edição e deleção)</li>
-<li>Transferências entre carteiras e controle iterativo de saldos</li>
-<li>Movimentos fixos, com simulação de parcelamento ou apenas lançamento automático a cada período</li>
-</ul>
+                    <div class="pswp__top-bar">
 
-<p>Novas funcionálidades estão sempre em desenvolvimento, consulte a <a href="https://github.com/arthurgregorio/web-budget/issues">lista de atividades do projeto</a> para propor uma ou acompanhar o que esta sendo feito!</p>
+                        <!--  Controls are self-explanatory. Order can be changed. -->
 
-<p>
-  Conheça mais na <a href="http://arthurgregorio.eti.br/blog/webbudget/" target="_blank">página oficial do projeto no meu blog</a> ou 
-  entre em contato pelo endereço: <a href="mailto:contato@arthurgregorio.eti.br">contato@arthurgregorio.eti.br</a>.
-</p>
+                        <div class="pswp__counter"></div>
 
-      </section>
-      <footer>
-        <p>Este projeto é desenvolvido por: <br/> <a href="https://br.linkedin.com/in/gregorioarthur" target="_blank">Arthur Gregório</a></p>
-      </footer>
-    </div>
-    <script src="javascripts/scale.fix.js"></script>
-              <script type="text/javascript">
-            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-          </script>
-          <script type="text/javascript">
-            try {
-              var pageTracker = _gat._getTracker("UA-27837541-4");
-            pageTracker._trackPageview();
-            } catch(err) {}
-          </script>
+                        <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 
-  </body>
+                        <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                        <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                        <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                        <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                        <!-- element will get class pswp__preloader--active when preloader is running -->
+                        <div class="pswp__preloader">
+                            <div class="pswp__preloader__icn">
+                              <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                        <div class="pswp__share-tooltip"></div> 
+                    </div>
+
+                    <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+                    </button>
+
+                    <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+                    </button>
+
+                    <div class="pswp__caption">
+                        <div class="pswp__caption__center"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        
+        <!--photoswipe-->
+        <script src="js/photoswipe.min.jsh"></script> 
+        <script src="js/photoswipe-ui-default.min.js"></script> 
+    </body>
 </html>
