@@ -1,12 +1,42 @@
 {
-  "menu": {
-    "contribute": "Contribute",
-    "live-preview": "Live Preview",
-    "sub-title": "Free financial control for you or your company"
-  },
-  "about": {
-    "header": "ABOUT",
-    "title": "What is this?",
-    "content": ""
-  }
+    "menu": {
+        "contribute": "Contribute",
+        "live-preview": "Live Preview",
+        "sub-title": "Free financial control for you or your company",
+        "english": "English",
+        "portuguese": "Portuguese"        
+    },
+    "about": {
+        "header": "ABOUT",
+        "title": "What is this?",
+        "p1": "The webBudget is a free and open-source project for managing the your finances or of your small business. With no cost or fee you can simply control all the revenues and expenses within a defined period, with graphs and controls that show how you financial health is going.",
+        "p2": "Below you can see the main features of the project or you can try him live by clicking in <a href='https://teste-webbudget.rhcloud.com' target='_blank'>this link</a>."
+    },
+    "project": {
+        "header": "THE PROJECT",
+        "features": {
+            "title1": "Main features",
+            "p1": "The system consists of a simple financial classification of movements with classes inside a cost center, this classification makes the movement as revenue or expense.",
+            "p2": "With the classified movements, you can pay him with your wallet. For that you can use a personal wallet or bank account, or yet, you can add credit or debit cards to place the payments of your movements.",
+            "p3": "For credit card payments, the system can track your movimentation and when you want to pay his invoice, the system groups all the expenses on the card and turns him on a single movement to pay with one of your wallets.",
+            "p4": "The system can provide more specific functionalities, like a logbook of your expenses with your vehicles and more...",
+            "p5": "See below a list of all the functionalities of the system:",
+            "li1": "Credit card control with detailed invoice",
+            "li2": "Movimentation classified by classes and cost centers",
+            "li3": "Wallet control, for personal wallets or bank accounts",
+            "li4": "A simple system to send or receive messages with other users",
+            "li5": "All the movimentation can be done with controlled periods with graphics to track the results",
+            "li6": "Vehicle logbook to maintain a simple history of your expenses, maintenances or refuelings",
+            "p6": "And much more! See the <a href='https://teste-webbudget.rhcloud.com' target='_blank'>live preview</a> for a full experience of the system running."
+        },
+        "technology": {
+            "title2": "Technology",
+            "p1": "Built using the Java platform, the project is designed to work everywhere through the web. So, you can deploy the project on a webserver of your choice and acess it from anywhere. No local server is needed. For example, the demonstration environment is provided by using a free <a href='https://www.openshift.com/' target='_blank'>OpenShift</a> account.",
+            "p2": "Some of the technologies used on the project:"
+        }
+    },
+    "footer": {
+        "the-author": "The Author",
+        "my-github": "My GitHub"
+    }    
 }

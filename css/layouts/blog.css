@@ -200,6 +200,7 @@ img {
     color: black;
 }
 
-.pure-button:hover {
+.pure-button {
+    box-shadow: none !important;
     background-image: none !important;
 }
